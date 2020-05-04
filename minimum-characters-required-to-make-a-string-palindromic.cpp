@@ -23,7 +23,7 @@ int solve(string A) {
                 centerMiddleCharPos=middleCharPos[i]-A.size()/2;
         }
         
-        return 
+        return centerMiddleCharPos;
     }
     
     
