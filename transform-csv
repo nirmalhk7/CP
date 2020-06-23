@@ -1,0 +1,17 @@
+#!/bin/bash
+
+inp=`cat transform-csv.csv`
+echo "$inp"
+$ORIGINALIFS=$IFS
+IFS='\n'
+inpLBL=($inp)
+$IFS=$ORIGINALIFS
+output=""
+for (( i=0; i<${#inpLBL[@]}; i++ ))
+do
+    line=inpLB:[$i]
+    IFS=',' read -r -a array <<< "$line"
+    $IFS=$ORIGINALIFS
+    $output+="${array[0]},${array[1]},${array[2]},${array[3]},${array[5]},+${array[4]}-${array[6]}"
+done
+echo "$output"
