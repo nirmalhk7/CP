@@ -5,8 +5,9 @@ class ListNode:
     
 def printList(head):
     while head!=None:
-        print(head.val)
+        print(head.val,end=" ")
         head=head.next
+    print("")
 
 def init(arx):
     temp = None
