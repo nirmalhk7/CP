@@ -20,9 +20,8 @@ def init(A):
     return root
 
 def printTree(head):
-    if(head):
-        print(head.val)
-        printTree(head.left)
-        printTree(head.right)
-    else:
+    if(head==None):
         return
+    printTree(head.left)
+    print(head.val)
+    printTree(head.right)
