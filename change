@@ -3,3 +3,4 @@
 git add .
 git commit -a -m "StatusOps"
 git push --all origin
+git checkout $1
